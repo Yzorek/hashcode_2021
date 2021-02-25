@@ -36,6 +36,7 @@ std::vector<Street> Parser::parseFile(std::string lines)
             seconds.push_back(lines.at(i));
 
         if (lines.at(i) == '\n') {
+            std::cout << int1 << std::endl;
             if (atoi(int2.c_str()) == 0) break;
             Tab.push_back(Street(atoi(int1.c_str()), atoi(int2.c_str()), atoi(seconds.c_str()), name));
             space_count = 0;
@@ -49,6 +50,8 @@ std::vector<Street> Parser::parseFile(std::string lines)
         // after_space = lines.substr(lines.find(" ") + 1);
         // Tab.push_back(Street(before_space, after_space, ))
     }
+
+    return (Tab);
 }
 
 Parser::~Parser()
