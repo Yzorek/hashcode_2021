@@ -9,6 +9,7 @@
 #define ILIAN_HPP_
 
 #include <iostream>
+#include <vector>
 
 class hashcode {
     public:

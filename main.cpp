@@ -1,6 +1,11 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
+#include "Ilian.hpp"
+#include "Parser.hpp"
+
+std::vector<Street> AllStreets;
 
 void openFile(char **av)
 {
@@ -25,6 +30,6 @@ int main(int ac, char **av)
     }
     if (ac >= 2)
         openFile(av);
-
+    AllStreets = Parser::parseFile();
     return 0;
 }
