@@ -6,6 +6,9 @@
 ##
 
 SRC		=		main.cpp	\
+				Ilian.cpp	\
+				Parser.cpp	\
+				Street.cpp	\
 
 OBJ		=		$(SRC:.cpp=.o)
 
